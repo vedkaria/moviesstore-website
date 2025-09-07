@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ved Karia — Software Engineer</title>
+  <meta name="description" content="Ved Karia • Personal portfolio and GT Movies Store case study" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0b0f;--panel:#11121a;--muted:#a8acb8;--text:#e8ebf7;--accent1:#8b5cf6;--accent2:#06b6d4;--glass:rgba(255,255,255,.06);
+      --radius:22px;--shadow:0 10px 35px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.04);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:radial-gradient(1200px 700px at 70% -10%,rgba(139,92,246,.25),transparent),radial-gradient(900px 500px at 10% 0,rgba(6,182,212,.18),transparent),var(--bg);color:var(--text);font:16px/1.6 Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1160px;margin:0 auto;padding:24px}
+    header.site{display:flex;gap:28px;align-items:stretch;margin-top:28px}
+    .card{background:var(--glass);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .profile{width:310px;display:flex;flex-direction:column;overflow:hidden}
+    .profile .cover{height:360px;background:#000 center/cover no-repeat}
+    .profile .meta{padding:18px 18px 14px}
+    .profile h1{margin:8px 0 0;font-size:34px;line-height:1.05}
+    .muted{color:var(--muted)}
+    .row{display:flex;align-items:center;gap:10px;margin-top:10px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:14px;background:linear-gradient(90deg,var(--accent1),var(--accent2));color:#fff;font-weight:600;box-shadow:0 8px 20px rgba(6,182,212,.25)}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.12);color:var(--text);box-shadow:none}
+    .pill{display:inline-flex;align-items:center;gap:6px;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);font-size:13px}
+    .hero{flex:1;padding:28px 28px 22px}
+    .kicker{letter-spacing:.22em;color:var(--muted);text-transform:uppercase;font-size:12px}
+    .headline{font-size:56px;line-height:1.02;margin:6px 0 8px}
+    .gradient{background:linear-gradient(90deg,var(--accent1),#7c3aed,#2563eb,#06b6d4);-webkit-background-clip:text;background-clip:text;color:transparent}
+    nav{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
+    nav a{padding:8px 12px;border-radius:10px}
+    nav a:hover{background:rgba(255,255,255,.06)}
+    main{max-width:1160px;margin:26px auto;padding:0 24px;display:grid;gap:22px}
+    section{padding:22px;border-radius:var(--radius);border:1px solid rgba(255,255,255,.06);background:var(--panel);box-shadow:var(--shadow)}
+    section h2{margin:4px 0 12px;font-size:26px}
+    section h3{margin:18px 0 8px;font-size:18px}
+    ul{margin:8px 0 0 18px}
+    .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}
+    .cards{display:grid;gap:10px}
+    .carditem{padding:14px;border-radius:16px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03)}
+    .footdock{position:fixed;left:50%;transform:translateX(-50%);bottom:16px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:8px 12px;backdrop-filter:blur(10px);display:flex;gap:10px;z-index:50}
+    .footdock a{padding:8px 10px;border-radius:10px}
+    .footdock a:hover{background:rgba(255,255,255,.08)}
+    iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:14px}
+    @media (max-width: 960px){
+      header.site{flex-direction:column}
+      .profile{width:100%;flex-direction:row}
+      .profile .cover{width:38%;height:240px}
+      .profile .meta{flex:1}
+      .headline{font-size:42px}
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top / Profile + Hero -->
+  <div class="container">
+    <header class="site">
+      <aside class="profile card">
+        <div class="cover" style="background-image:url('TODO_REPLACE_WITH_YOUR_PHOTO_URL');"></div>
+        <div class="meta">
+          <div class="pill muted">Georgia Tech • CompE / AI</div>
+          <h1>Ved Karia</h1>
+          <div class="muted">Aspiring Software Engineer</div>
+          <div class="row">
+            <a class="btn" href="TODO_LINK_TO_RESUME.pdf" target="_blank" rel="noreferrer">Download Résumé</a>
+            <a class="btn ghost" href="mailto:TODO_EMAIL">Email</a>
+          </div>
+          <div class="row">
+            <a class="pill" href="https://github.com/TODO" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="pill" href="https://www.linkedin.com/in/TODO" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="pill" href="https://x.com/TODO" target="_blank" rel="noreferrer">X</a>
+            <a class="pill" href="#video">Demo</a>
+          </div>
+        </div>
+      </aside>
+
+      <div class="hero card">
+        <div class="kicker">Hello, I’m Ved</div>
+        <div class="headline">
+          Software <span class="gradient">ENGINEER.</span>
+        </div>
+        <p class="muted" style="max-width:60ch">
+          I’m a student who loves building fast, thoughtful web apps. I focus on clean UX, solid
+          engineering practices, and shipping things that work.
+        </p>
+        <nav aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#project">GT Movies Store</a>
+          <a href="#process">Process</a>
+          <a href="#video">Video</a>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <!-- Content Sections -->
+  <main>
+
+    <section id="about" class="grid">
+      <div>
+        <h2>1) Introduction</h2>
+        <p>
+          Hello! My name is <strong>Ved Karia</strong>, and I am an aspiring software engineer passionate about
+          building impactful web applications. I enjoy turning ideas into working products and have
+          been exploring modern frameworks, databases, and deployment tools.
+        </p>
+      </div>
+      <div class="cards">
+        <div class="carditem"><strong>Interests:</strong> web apps, distributed systems, ML</div>
+        <div class="carditem"><strong>Tech:</strong> Python, Django, JavaScript, HTML/CSS, SQL</div>
+        <div class="carditem"><strong>Currently:</strong> Iterating on GT Movies Store and personal projects</div>
+      </div>
+    </section>
+
+    <section id="project">
+      <h2>2) GT Movies Store — Description</h2>
+      <p>
+        <strong>GT Movies Store</strong> is a Django-based web app that lets users browse a movie catalog,
+        view details, and manage entries via an admin interface. It demonstrates routing, templates,
+        models, and database integration.
+      </p>
+
+      <h3>User Stories & Screens</h3>
+      <ul>
+        <li><strong>Home:</strong> Welcome/landing with quick links to catalog and about.</li>
+        <li><strong>Catalog:</strong> List of movies (title, genre, year, rating) with search/filter.</li>
+        <li><strong>Details:</strong> Dedicated page per movie with extended description and imagery.</li>
+        <li><strong>Admin:</strong> Create/update/delete movies to keep the catalog fresh.</li>
+      </ul>
+    </section>
+
+    <section id="process">
+      <h2>3) Process — How I Built It</h2>
+      <ul>
+        <li><strong>Planning & Setup:</strong> New Django project; clean app structure.</li>
+        <li><strong>Implementation:</strong> URLs → views → templates; added static files for styling.</li>
+        <li><strong>Database:</strong> MySQL + PyMySQL; migrations for models.</li>
+        <li><strong>Testing/Debugging:</strong> Solved config and import issues; verified routes
+            and templates with unit runs.</li>
+        <li><strong>Deployment:</strong> Source on GitHub; deployed on PythonAnywhere. </li>
+      </ul>
+    </section>
+
+    <section id="video">
+      <h2>4) Video Demonstration</h2>
+      <!-- Replace the src with your unlisted YouTube link or Loom share link -->
+      <iframe
+        src="https://www.youtube.com/embed/TODO_VIDEO_ID"
+        title="GT Movies Store Demo"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </section>
+
+  </main>
+
+  <!-- Bottom dock -->
+  <div class="footdock">
+    <a href="#about">About</a>
+    <a href="#project">Project</a>
+    <a href="#process">Process</a>
+    <a href="#video">Video</a>
+  </div>
+
+  <script>
+    // Smooth in-page navigation
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        const id=a.getAttribute('href').slice(1);
+        const el=document.getElementById(id);
+        if(el){e.preventDefault();el.scrollIntoView({behavior:"smooth",block:"start"});}
+      });
+    });
+  </script>
+</body>
+</html>
